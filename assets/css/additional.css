@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+#main-visual {
+    position: relative;
+}
+
+#main-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    background-size: cover;
+    animation-name: videofade;
+    animation-duration: 3s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes videofade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
